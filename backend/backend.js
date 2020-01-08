@@ -1,8 +1,5 @@
-/* 
-  import { get, update, remove, Q, find } from '@reshuffle/db';
- */
+import { get, update, remove, Q, find } from '@reshuffle/db';
 
 /* @expose */
-export async function hello(name) {
-  return `Hello ${name}!`;
+export async function temp(name) {
 }
