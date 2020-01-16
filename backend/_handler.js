@@ -44,40 +44,9 @@ const autohookConfig = {
 
 const webhook = new Autohook(autohookConfig);
 
-// Cleans up all existing user/tweet state
-const removeAll = async () => {
-  const allUsers = await find(
-    Q.filter(
-      Q.key.startsWith(userPrefix),
-    ),
-  );
-  const allReplies = await find(
-    Q.filter(
-      Q.key.startsWith(repliesPrefix),
-    ),
-  );
-  const allKeys = [
-    ...(allUsers.map(({ key }) => key)),
-    ...(allReplies.map(({ key }) => key)),
-  ];
-  for (let i = 0; i < allKeys.length; i += 1) {
-    await remove(allKeys[i]);
-  }
-  const allSubs = allUsers.map(({ value }) => value.user_id);
-  for (let i = 0; i < allSubs.length; i += 1) {
-    try {
-      await webhook.unsubscribe(allSubs[i]);
-    } catch (err) {
-      console.error(err);
-    }
-  }
-}
-
 // Remove existing data before starting the webhook
-// removeAll().then(() =>
-//   webhook.removeWebhooks().then(() =>
-//     webhook.start(webhookUrl))
-// );
+webhook.removeWebhooks().then(() =>
+  webhook.start(webhookUrl))
 
 const app = express();
 app.set('trust proxy', true);
