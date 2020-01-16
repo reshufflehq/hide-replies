@@ -1,5 +1,5 @@
 {
-  "name": "blank",
+  "name": "hide-replies",
   "version": "0.0.1",
   "license": "MIT",
   "keywords": [
@@ -7,7 +7,9 @@
     "react",
     "blank",
     "start",
-    "fullstack"
+    "fullstack",
+    "twitter",
+    "hide-replies"
   ],
   "dependencies": {
     "@reshuffle/code-transform": "0.1.0",
