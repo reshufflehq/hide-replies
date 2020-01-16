@@ -34,7 +34,7 @@ function App() {
 
   const stopHiding = async () => {
     try {
-      await fetch('/stop-hiding');
+      await fetch('/disonnect');
     } catch (err) {
       console.error(err);
     }
