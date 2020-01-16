@@ -1,13 +1,24 @@
 [![CircleCI](https://circleci.com/gh/reshufflehq/blank.svg?style=svg)](https://circleci.com/gh/reshufflehq/blank)
 
-This is a [Reshuffle](https://reshuffle.com/) template.
-
-## About
-
-A starting point for creating your app with Reshuffle.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Screenshots
+This is a [Reshuffle](https://reshuffle.com/) template. It handles the twitter 3-leg OAuth process and allows users to hide replies
+to potentially toxic tweets. By default, replies will be automatically flagged by the backend (if they include the word
+"toxic"). To hide a reply, the user must explicitly click the
+"Hide" button.
 
 <img src="./app-screen.png" width="50%" height="50%">
+
+
+### Requirements
+
+You will need a Twitter development account and access to
+Twitter labs. Use the credentials you obtain from those processes
+to fill in the `.env` file for your app.
+
+.env
+
+```yml
+TWITTER_CONSUMER_KEY=
+TWITTER_CONSUMER_SECRET=
+TWITTER_ENV=
+COOKIE_SIGNING_SECRET=
+```

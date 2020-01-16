@@ -35,8 +35,6 @@ const callbackUrl = new URL(`${baseUrl}/oauth-callback`);
 const toxicWords = ['toxic'];
 
 const autohookConfig = {
-  token: process.env.TWITTER_ACCESS_TOKEN,
-  token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
   consumer_key: TWITTER_CONSUMER_KEY,
   consumer_secret: TWITTER_CONSUMER_SECRET,
   env: process.env.TWITTER_ENV,
