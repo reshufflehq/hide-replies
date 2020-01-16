@@ -1,0 +1,16 @@
+.login-button-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.login-button-images >img {
+  height: 90px;
+  width: auto;
+}
+
+.reshuffle-logo {
+  padding: 5%;
+}

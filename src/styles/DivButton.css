@@ -1,0 +1,18 @@
+.div-button {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+  cursor: pointer;
+  font-family: Menlo;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  border-bottom: 2px solid rgb(26, 151, 240);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.div-button >span {
+  font-size: 20px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+}

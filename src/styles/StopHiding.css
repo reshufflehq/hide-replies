@@ -1,0 +1,38 @@
+.stop-button {
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.stop-sign-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 3%;
+}
+
+.stop-sign {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+}
+
+.stop-sign-text {
+  color: white;
+  font-size: 32px;
+  position: absolute;
+}
+
+.stop-hiding-container {
+  flex-grow: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.stop-hiding-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
