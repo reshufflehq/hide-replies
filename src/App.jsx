@@ -43,10 +43,12 @@ function App() {
     rmCookie('request_token');
   };
 
+  const auth = cookies.id && cookies.name;
+
   return (
-    <div className='App'>
+    <div className={`App ${auth ? 'blue-bg' : ''}`}>
       {
-        (!cookies.id || !cookies.name) ?
+        !auth ?
           <TwitterLogin/>
         :
           <StopHiding stopHidingHandler={stopHiding}/>
