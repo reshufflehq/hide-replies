@@ -1,3 +1,5 @@
+# We have terminated the backend for this project.  Old Reshuffle projects can no longer be deployed.
+
 [![CircleCI](https://circleci.com/gh/reshufflehq/blank.svg?style=svg)](https://circleci.com/gh/reshufflehq/blank)
 
 This is a [Reshuffle](https://reshuffle.com/) template. It handles the twitter 3-leg OAuth process and allows users to hide replies
